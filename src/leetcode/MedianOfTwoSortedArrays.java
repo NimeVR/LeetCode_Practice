@@ -1,8 +1,7 @@
-package leetcode; // If you created a package, keep this line. If not, remove it.
+package leetcode; 
 
 public class MedianOfTwoSortedArrays {
     
-    // This is your exact solution from LeetCode
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length, m = nums2.length;
         int t = n + m;
@@ -33,15 +32,13 @@ public class MedianOfTwoSortedArrays {
         }
     }
 
-    // This main method allows you to run it in Eclipse to test
     public static void main(String[] args) {
         MedianOfTwoSortedArrays solver = new MedianOfTwoSortedArrays();
         
-        // Test Case 1
         int[] nums1 = {1, 3};
         int[] nums2 = {2};
         double result = solver.findMedianSortedArrays(nums1, nums2);
         
-        System.out.println("Median is: " + result); // Should print 2.0
+        System.out.println("Median is: " + result); 
     }
 }
